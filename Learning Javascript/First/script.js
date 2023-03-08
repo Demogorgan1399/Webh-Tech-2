@@ -7,14 +7,12 @@ let arr = [2, 3, 4, 5, 6];
 
 //})
 
-
 // Map() function loop over an array and return an array as output
 let newArr = arr.map(function (currentItem, index, array) {
     console.log(`currnentItem is ${currentItem} index is ${index},  array ${array}`);
     return currentItem * 2
 });
 console.log(newArr);
-
 
 // filter() fuction used to filter out values
 let filteredValues = arr.filter(function (currentItem, index, array) {

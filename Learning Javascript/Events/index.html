@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example of Events</title>
+    </head>
+
+    <body>
+        <!-- events in javascript add and remove listener -->
+        <button onclick="removeHandler()">Click Me</button>
+        <div class="demo"></div>
+
+        <!-- event propogation in javascript -->
+        <form onclick="alert('I am form ')">
+            I am form 
+            <div onclick="alert('I am div tag')">
+                I am div
+                <p onclick="alert('I am para' )"> I am p</p>
+            </div>
+        </form>
+
+        <!-- custom events -->
+        <button onclick="customMethod()">Click to see</button>
+        <script src="./script.js"></script>
+    </body>
+</html>
